@@ -1,0 +1,57 @@
+.portfolio {
+  position: relative;
+  z-index: 3;
+  background-image: url("media/140520040122.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  h3 {
+    margin: 0;
+    padding-top: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .swiper-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 550px;
+    .swiper-wrapper {
+      .swiper-slide {
+        background-position: center center;
+        position: relative;
+        a {
+          position: absolute;
+          right: 20px;
+          bottom: 20px;
+          display: block;
+          padding: 5px;
+          font-weight: bold;
+          color: #ff1213;
+          z-index: 5;
+        }
+      }
+      .slide1 {
+        background-image: url("media/slide1.jpg");
+        background-size: cover;
+      }
+      .slide2 {
+        background-image: url("media/slide2.jpg");
+        background-size: cover;
+      }
+      .slide3 {
+        background-image: url("media/slide3.jpg");
+        background-size: cover;
+      }
+      .slide4 {
+        background-image: url("media/slide4.jpg");
+        background-size: cover;
+      }
+    }
+  }
+  &-wrap {
+    width: 100%;
+    height: 40px;
+  }
+}

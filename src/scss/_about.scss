@@ -1,0 +1,40 @@
+.about {
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  h1 {
+    margin: 0;
+    padding-top: 80px;
+    font-size: 36px;
+    text-align: center;
+
+  }
+  &-wrap {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: flex-start;
+
+    &-photo {
+      width: 200px;
+      height: 300px;
+      background-image: url("media/myphoto1.jpg");
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+    &-text {
+      margin-left: 100px;
+      h3 {
+        margin-top: 0;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      ul > li {
+        line-height: 25px;
+      }
+    }
+  }
+}

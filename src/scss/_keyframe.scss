@@ -1,0 +1,10 @@
+@keyframes logoanimate {
+  0%, 100% {
+    transform: scale(1.0);
+    background-color: inherit;
+  }
+  50% {
+    transform: scale(1.08);
+    background-color: #c4161c;
+  }
+}

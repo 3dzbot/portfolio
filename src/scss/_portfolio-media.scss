@@ -1,0 +1,19 @@
+@media (max-width: 1024px) {
+  .portfolio {
+    background:linear-gradient(to right, #119afe, #463eff);
+  }
+}
+@media (max-width: 768px) {
+  .portfolio {
+    h3 {
+      padding: 20px 0;
+    }
+    .swiper-container {
+      margin: 0;
+      height: 300px;
+    }
+    &-wrap {
+      height: 0;
+    }
+  }
+}

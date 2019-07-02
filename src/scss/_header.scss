@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 0;
+
+  .header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      background-image: url("media/logo.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      &:hover {
+        animation: logoanimate linear 3s infinite;
+      }
+    }
+
+    nav {
+      margin-left: 140px;
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        display: block;
+        color: #f7df1e;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 12px;
+
+        &:hover {
+          background-color: rgba(0,0,0,.1);
+          border-radius: 5px;
+        }
+      }
+    }
+
+    .contacts {
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        text-decoration: none;
+        display: inline-block;
+        margin-left: 24px;
+        position: relative;
+        color: #f7df1e;
+        font-weight: bold;
+        line-height: 14px;
+
+        &.facebook {
+          width: 14px;
+          height: 14px;
+          background-image: url("media/facebook.svg");
+          background-size: contain;
+          background-position: center center;
+          background-repeat: no-repeat;
+        }
+
+        &.mail {
+          &:before {
+            content: '';
+            display: block;
+            width: 14px;
+            height: 14px;
+            position: absolute;
+            top: 0;
+            left: -16px;
+            background-image: url("media/icons8-important-mail-50.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+          }
+        }
+
+        &.phone {
+          &:before {
+            content: '';
+            display: block;
+            width: 11px;
+            height: 13px;
+            position: absolute;
+            top: 0;
+            left: -13px;
+            background-image: url("media/icon-mobile.png");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+        }
+
+        &:hover {
+          border-bottom: 1px solid black;
+        }
+      }
+    }
+  }
+}
