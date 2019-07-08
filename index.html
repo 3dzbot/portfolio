@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="build/style/style.css">
 </head>
 <body>
+<!--visual effects on background-->
 <canvas id="lines"></canvas>
 <header>
     <div class="center-wrap header-wrap">
@@ -30,11 +31,12 @@
         </nav>
         <div class="contacts">
             <a class="facebook" href="https://www.facebook.com/zoduaks" target="_blank"></a>
-            <a class="mail" href="mailto:zoduaks@ukr.net">Написать письмо</a>
-            <a class="phone" href="tel:+380967342908">Позвонить</a>
+            <a class="mail" href="mailto:zoduaks@ukr.net" title="zoduaks@ukr.net">Написать письмо</a>
+            <a class="phone" href="tel:+380967342908" title="096-73-42-908">Позвонить</a>
         </div>
     </div>
 </header>
+<!--end of header-->
 <div class="about" id="about">
     <div class="center-wrap">
         <h1>Василий Стрижеус</h1>
@@ -57,6 +59,7 @@
         </div>
     </div>
 </div>
+<!--end of about-->
 <div class="skills" id="skills">
     <div class="center-wrap">
         <h3>Навыки:</h3>
@@ -76,6 +79,7 @@
         </ul>
     </div>
 </div>
+<!--end of skills-->
 <div class="portfolio" id="portfolio">
     <div class="center-wrap">
         <h3>Мои работы</h3>
@@ -105,10 +109,12 @@
     </div>
     <div class="portfolio-wrap"></div>
 </div>
+<!--end of portfolio-->
 <div class="contact" id="contact">
+<!--visual effects on background-->
     <canvas id="stars"></canvas>
+<!--container for form-->
     <div class="container">
-
         <div class="row">
             <div class="">
                 <form action="mail.php" method="POST">
@@ -121,9 +127,9 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="">Введите номер телефона</label>
-                        <input type="text" class="form-control" id="" name="user_phone"
-                               placeholder="+3 (096) 12 34 567">
+                        <label for="user_phone">Введите номер телефона</label>
+                        <input type="text" class="form-control" id="user_phone" name="user_phone"
+                               placeholder="+38 (096) 12 34 567">
                     </div>
 
                     <div class="mb-3">
@@ -143,28 +149,22 @@
 
     </div><!-- /.container -->
 </div>
+<!--end of contact-->
 <footer>
     © Copyright @3dzbot 2019, All rights reserved.
     <button class="btn btn-top">На верх</button>
 </footer>
+<!--end of footer-->
 
-
-
-<!-- background-lines
-================================================== -->
-<script src="http://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
-<script src="http://atuin.ru/js/art/lines.js" type="text/javascript"></script>
-<script src="http://atuin.ru/js/art/stars.js" type="text/javascript"></script>
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
+<!-- background-lines -->
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="http://atuin.ru/js/art/lines.js"></script>
+<script src="http://atuin.ru/js/art/stars.js"></script>
+<!-- Bootstrap core JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
-
+<!--swiper core on js-->
 <script src="build/js/swiper.min.js"></script>
+<!--cite main js-->
 <script src="build/js/script.js"></script>
-
-<script></script>
 </body>
 </html>
