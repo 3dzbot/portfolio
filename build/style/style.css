@@ -172,6 +172,9 @@ header {
         font-weight: bold;
         color: #ff1213;
         z-index: 5; }
+        .portfolio .swiper-container .swiper-wrapper .swiper-slide a:hover {
+          background-color: rgba(255, 18, 19, 0.4);
+          border-radius: 5px; }
     .portfolio .swiper-container .swiper-wrapper .slide1 {
       background-image: url("media/slide1.jpg");
       background-size: cover; }

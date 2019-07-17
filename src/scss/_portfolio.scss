@@ -30,6 +30,10 @@
           font-weight: bold;
           color: #ff1213;
           z-index: 5;
+          &:hover {
+            background-color: rgba(255,18,19,.4);
+            border-radius: 5px;
+          }
         }
       }
       .slide1 {
